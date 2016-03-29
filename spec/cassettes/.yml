@@ -1,0 +1,324 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=1&secret=superdupersecret&service=session&type=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:09:27 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api24
+      X-Kaltura-Session:
+      - '1087414415'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '224'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>START_SESSION_ERROR</code><message>Error
+        while starting session for partner [1]</message><args></args></error></result><executionTime>0.038830041885376</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:09:27 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=1851191&secret=ADMINISTRATOR_SECRET&service=session&type=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:25:11 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api25
+      X-Kaltura-Session:
+      - '1810099928'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '229'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>START_SESSION_ERROR</code><message>Error
+        while starting session for partner [1851191]</message><args></args></error></result><executionTime>0.026906967163086</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:25:11 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=1851191&secret=d1be277fa0e84bde36b82deb1448a4cb&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:31:30 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api1
+      X-Kaltura:
+      - cached-dispatcher,61bc664e23131b8f1e038969c5841497,0.00026917457580566
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '175'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: "<xml><result>djJ8MTg1MTE5MXzbAcaH3I_qcPZ7a-WrZqNrbqvDJpvAgyM-PD1d9WRWhLuCHEUbEBI89LlFQTcFuTi6Tv6uJ2pVA-54Xw_gByb7</result><executionTime>0.00026917457580566</executionTime></xml>"
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:31:30 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=get&entryId=0_4ydctzyw&ks=djJ8MTg1MTE5MXzbAcaH3I_qcPZ7a-WrZqNrbqvDJpvAgyM-PD1d9WRWhLuCHEUbEBI89LlFQTcFuTi6Tv6uJ2pVA-54Xw_gByb7&service=playlist&version=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:31:30 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api22
+      X-Kaltura-Session:
+      - '1940108342'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-b3312e7b2dff9ea7af83a14dfb495bf6
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '264'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>MISSING_MANDATORY_PARAMETER</code><message>Missing
+        parameter &quot;id&quot;</message><args><item><objectType>KalturaApiExceptionArg</objectType><name>PARAM_NAME</name><value>id</value></item></args></error></result><executionTime>0.0044209957122803</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:31:30 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=get&entryId=waffleman&ks=djJ8MTg1MTE5MXzbAcaH3I_qcPZ7a-WrZqNrbqvDJpvAgyM-PD1d9WRWhLuCHEUbEBI89LlFQTcFuTi6Tv6uJ2pVA-54Xw_gByb7&service=playlist&version=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:31:45 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api29
+      X-Kaltura-Session:
+      - '1769070687'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-e1bbc5ce927ad9c47601eb715813c3f2
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '263'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>MISSING_MANDATORY_PARAMETER</code><message>Missing
+        parameter &quot;id&quot;</message><args><item><objectType>KalturaApiExceptionArg</objectType><name>PARAM_NAME</name><value>id</value></item></args></error></result><executionTime>0.0019428730010986</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:31:45 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=get&id=0_4ydctzyw&ks=djJ8MTg1MTE5MXzbAcaH3I_qcPZ7a-WrZqNrbqvDJpvAgyM-PD1d9WRWhLuCHEUbEBI89LlFQTcFuTi6Tv6uJ2pVA-54Xw_gByb7&service=playlist&version=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:33:50 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api27
+      X-Kaltura-Session:
+      - '2053119733'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-9d579372536cb73d58f735c61ac28f46
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1971'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaPlaylist</objectType><playlistContent>&lt;?xml version=&quot;1.0&quot;?&gt;
+        &lt;playlist&gt;&lt;total_results&gt;100&lt;/total_results&gt;&lt;filters&gt;&lt;filter&gt;&lt;in_status&gt;2&lt;/in_status&gt;&lt;in_type&gt;1&lt;/in_type&gt;&lt;in_media_type&gt;1,5&lt;/in_media_type&gt;&lt;in_moderation_status&gt;2,5,6&lt;/in_moderation_status&gt;&lt;order_by&gt;-start_date&lt;/order_by&gt;&lt;advancedSearch type=&quot;AdvancedSearchFilterOperator&quot; kalturaClass=&quot;KalturaSearchOperator&quot; operatorType=&quot;2&quot;&gt;&lt;item type=&quot;AdvancedSearchFilterMatchAttributeCondition&quot; kalturaClass=&quot;KalturaBaseEntryMatchAttributeCondition&quot; field=&quot;categories&quot; value=&quot;30078702&quot; not=&quot;&quot;/&gt;&lt;item type=&quot;AdvancedSearchFilterMatchAttributeCondition&quot; kalturaClass=&quot;KalturaBaseEntryMatchAttributeCondition&quot; field=&quot;categories&quot; value=&quot;30096782&quot; not=&quot;&quot;/&gt;&lt;item type=&quot;AdvancedSearchFilterMatchAttributeCondition&quot; kalturaClass=&quot;KalturaBaseEntryMatchAttributeCondition&quot; field=&quot;categories&quot; value=&quot;30086012&quot; not=&quot;&quot;/&gt;&lt;/advancedSearch&gt;&lt;/filter&gt;&lt;/filters&gt;&lt;/playlist&gt;
+        </playlistContent><filters><item><objectType>KalturaMediaEntryFilterForPlaylist</objectType><limit></limit><mediaTypeEqual></mediaTypeEqual><mediaTypeIn>1,5</mediaTypeIn><sourceTypeEqual></sourceTypeEqual><sourceTypeNotEqual></sourceTypeNotEqual><sourceTypeIn></sourceTypeIn><sourceTypeNotIn></sourceTypeNotIn><mediaDateGreaterThanOrEqual></mediaDateGreaterThanOrEqual><mediaDateLessThanOrEqual></mediaDateLessThanOrEqual><flavorParamsIdsMatchOr></flavorParamsIdsMatchOr><flavorParamsIdsMatchAnd></flavorParamsIdsMatchAnd><lastPlayedAtGreaterThanOrEqual></lastPlayedAtGreaterThanOrEqual><lastPlayedAtLessThanOrEqual></lastPlayedAtLessThanOrEqual><durationLessThan></durationLessThan><durationGreaterThan></durationGreaterThan><durationLessThanOrEqual></durationLessThanOrEqual><durationGreaterThanOrEqual></durationGreaterThanOrEqual><durationTypeMatchOr></durationTypeMatchOr><freeText></freeText><isRoot></isRoot><categoriesFullNameIn></categoriesFullNameIn><categoryAncestorIdIn></categoryAncestorIdIn><redirectFromEntryId></redirectFromEntryId><idEqual></idEqual><idIn></idIn><idNotIn></idNotIn><nameLike></nameLike><nameMultiLikeOr></nameMultiLikeOr><nameMultiLikeAnd></nameMultiLikeAnd><nameEqual></nameEqual><partnerIdEqual></partnerIdEqual><partnerIdIn></partnerIdIn><userIdEqual></userIdEqual><userIdIn></userIdIn><creatorIdEqual></creatorIdEqual><tagsLike></tagsLike><tagsMultiLikeOr></tagsMultiLikeOr><tagsMultiLikeAnd></tagsMultiLikeAnd><adminTagsLike></adminTagsLike><adminTagsMultiLikeOr></adminTagsMultiLikeOr><adminTagsMultiLikeAnd></adminTagsMultiLikeAnd><categoriesMatchAnd></categoriesMatchAnd><categoriesMatchOr></categoriesMatchOr><categoriesNotContains></categoriesNotContains><categoriesIdsMatchAnd></categoriesIdsMatchAnd><categoriesIdsMatchOr></categoriesIdsMatchOr><categoriesIdsNotContains></categoriesIdsNotContains><categoriesIdsEmpty></categoriesIdsEmpty><statusEqual></statusEqual><statusNotEqual></statusNotEqual><statusIn>2</statusIn><statusNotIn></statusNotIn><moderationStatusEqual></moderationStatusEqual><moderationStatusNotEqual></moderationStatusNotEqual><moderationStatusIn>2,5,6</moderationStatusIn><moderationStatusNotIn></moderationStatusNotIn><typeEqual></typeEqual><typeIn>1</typeIn><createdAtGreaterThanOrEqual></createdAtGreaterThanOrEqual><createdAtLessThanOrEqual></createdAtLessThanOrEqual><updatedAtGreaterThanOrEqual></updatedAtGreaterThanOrEqual><updatedAtLessThanOrEqual></updatedAtLessThanOrEqual><totalRankLessThanOrEqual></totalRankLessThanOrEqual><totalRankGreaterThanOrEqual></totalRankGreaterThanOrEqual><groupIdEqual></groupIdEqual><searchTextMatchAnd></searchTextMatchAnd><searchTextMatchOr></searchTextMatchOr><accessControlIdEqual></accessControlIdEqual><accessControlIdIn></accessControlIdIn><startDateGreaterThanOrEqual></startDateGreaterThanOrEqual><startDateLessThanOrEqual></startDateLessThanOrEqual><startDateGreaterThanOrEqualOrNull></startDateGreaterThanOrEqualOrNull><startDateLessThanOrEqualOrNull></startDateLessThanOrEqualOrNull><endDateGreaterThanOrEqual></endDateGreaterThanOrEqual><endDateLessThanOrEqual></endDateLessThanOrEqual><endDateGreaterThanOrEqualOrNull></endDateGreaterThanOrEqualOrNull><endDateLessThanOrEqualOrNull></endDateLessThanOrEqualOrNull><referenceIdEqual></referenceIdEqual><referenceIdIn></referenceIdIn><replacingEntryIdEqual></replacingEntryIdEqual><replacingEntryIdIn></replacingEntryIdIn><replacedEntryIdEqual></replacedEntryIdEqual><replacedEntryIdIn></replacedEntryIdIn><replacementStatusEqual></replacementStatusEqual><replacementStatusIn></replacementStatusIn><partnerSortValueGreaterThanOrEqual></partnerSortValueGreaterThanOrEqual><partnerSortValueLessThanOrEqual></partnerSortValueLessThanOrEqual><rootEntryIdEqual></rootEntryIdEqual><rootEntryIdIn></rootEntryIdIn><parentEntryIdEqual></parentEntryIdEqual><entitledUsersEditMatchAnd></entitledUsersEditMatchAnd><entitledUsersEditMatchOr></entitledUsersEditMatchOr><entitledUsersPublishMatchAnd></entitledUsersPublishMatchAnd><entitledUsersPublishMatchOr></entitledUsersPublishMatchOr><tagsNameMultiLikeOr></tagsNameMultiLikeOr><tagsAdminTagsMultiLikeOr></tagsAdminTagsMultiLikeOr><tagsAdminTagsNameMultiLikeOr></tagsAdminTagsNameMultiLikeOr><tagsNameMultiLikeAnd></tagsNameMultiLikeAnd><tagsAdminTagsMultiLikeAnd></tagsAdminTagsMultiLikeAnd><tagsAdminTagsNameMultiLikeAnd></tagsAdminTagsNameMultiLikeAnd><orderBy>-startDate</orderBy><advancedSearch><objectType>KalturaSearchOperator</objectType><type>2</type><items><item><objectType>KalturaBaseEntryMatchAttributeCondition</objectType><attribute>categoriesIds</attribute><not></not><value>30078702</value><relatedObjects></relatedObjects></item><item><objectType>KalturaBaseEntryMatchAttributeCondition</objectType><attribute>categoriesIds</attribute><not></not><value>30096782</value><relatedObjects></relatedObjects></item><item><objectType>KalturaBaseEntryMatchAttributeCondition</objectType><attribute>categoriesIds</attribute><not></not><value>30086012</value><relatedObjects></relatedObjects></item></items><relatedObjects></relatedObjects></advancedSearch><relatedObjects></relatedObjects></item></filters><totalResults>100</totalResults><playlistType>10</playlistType><plays>0</plays><views>0</views><duration>0</duration><executeUrl>k_pl_0_name=Front Page&amp;k_pl_0_url=http%3A%2F%2Fwww.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D1851191%26subp_id%3D0%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_4ydctzyw</executeUrl><id>0_4ydctzyw</id><name>Front Page</name><description></description><partnerId>1851191</partnerId><userId></userId><creatorId></creatorId><tags>topnews</tags><adminTags>eikon_channel,sourceid2389884</adminTags><categories></categories><categoriesIds></categoriesIds><status>2</status><moderationStatus>6</moderationStatus><moderationCount>0</moderationCount><type>5</type><createdAt>1436129429</createdAt><updatedAt>1454657988</updatedAt><rank>0</rank><totalRank>0</totalRank><votes>0</votes><groupId></groupId><partnerData></partnerData><downloadUrl>http://cdnbakmi.kaltura.com/p/1851191/sp/0/raw/entry_id/0_4ydctzyw/version/100581</downloadUrl><searchText>_PAR_ONLY_ _1851191_ _MEDIA_TYPE_10|  Front Page topnews eikon_channel,sourceid2389884</searchText><licenseType></licenseType><version>100581</version><thumbnailUrl>http://cfvod.kaltura.com/p/1851191/sp/0/thumbnail/entry_id/0_4ydctzyw/version/0</thumbnailUrl><accessControlId>1795031</accessControlId><startDate>1386422298</startDate><endDate></endDate><referenceId>2000000</referenceId><replacingEntryId></replacingEntryId><replacedEntryId></replacedEntryId><replacementStatus>0</replacementStatus><partnerSortValue>0</partnerSortValue><conversionProfileId></conversionProfileId><redirectEntryId></redirectEntryId><rootEntryId>0_4ydctzyw</rootEntryId><parentEntryId></parentEntryId><operationAttributes></operationAttributes><entitledUsersEdit></entitledUsersEdit><entitledUsersPublish></entitledUsersPublish><capabilities></capabilities><relatedObjects></relatedObjects></result><executionTime>0.033644914627075</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:33:50 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=get&id=waffleman&ks=djJ8MTg1MTE5MXzbAcaH3I_qcPZ7a-WrZqNrbqvDJpvAgyM-PD1d9WRWhLuCHEUbEBI89LlFQTcFuTi6Tv6uJ2pVA-54Xw_gByb7&service=playlist&version=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Mar 2016 15:33:53 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api25
+      X-Kaltura-Session:
+      - '58628584'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '268'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>INVALID_ENTRY_ID</code><message>Unknown
+        Playlist [waffleman]</message><args><item><objectType>KalturaApiExceptionArg</objectType><name>ENTRY_TYPE</name><value>Playlist</value></item><item><objectType>KalturaApiExceptionArg</objectType><name>ENTRY_ID</name><value>waffleman</value></item></args></error></result><executionTime>0.029479026794434</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 29 Mar 2016 15:33:53 GMT
+recorded_with: VCR 2.9.3

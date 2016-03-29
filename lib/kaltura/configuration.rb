@@ -6,11 +6,10 @@ module Kaltura
 
     @@defaults = {
       :partner_id => 'PARTNER_ID',
-      :administrator_secret => 'ADMINISTRATOR_SECRET',
       :service_url => 'http://kaltura.com'
     }
 
-    attr_accessor :administrator_secret, :partner_id, :service_url
+    attr_accessor :administrator_secret, :partner_id, :service_url, :user_secret
 
     def initialize
       @@defaults.each_pair{|k,v| self.send("#{k}=",v)}

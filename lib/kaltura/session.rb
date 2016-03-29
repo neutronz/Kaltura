@@ -2,7 +2,6 @@ module Kaltura
   class Session < DelegateClass(Hashie::Mash)
     extend ClientResource
 
-    SESSION_TYPE = 2
     @@kaltura_session ||= nil
 
     def self.start
@@ -22,7 +21,7 @@ module Kaltura
     protected
 
     def self._session_request_options
-      { :partnerId => Kaltura.config.partner_id, :secret => Kaltura.config.administrator_secret, :type => SESSION_TYPE }
+      { partnerId: Kaltura.config.partner_id, secret: (Kaltura.config.administrator_secret || Kaltura.config.user_secret), type: Kaltura.config.administrator_secret ? 2 : 0 }
     end
 
     def self._clear_kaltura_session

@@ -3,12 +3,13 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'rspec'
 require 'kaltura'
 require 'vcr'
+require 'pry'
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
-VCR.config do |c|
+VCR.configure do |c|
   c.cassette_library_dir     = 'spec/cassettes'
-  c.stub_with                :webmock
+  c.hook_into :webmock
   c.default_cassette_options = { :record => :once }
 end
 
