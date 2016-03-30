@@ -33,14 +33,28 @@ describe Kaltura::Playlist  do
 
   describe "#execute" do
     context "retrieve an existing playlist's items" do
+      let(:options) {}
+
       subject do
-        Kaltura::Playlist.execute(id)
+        Kaltura::Playlist.execute(id, options)
       end
 
       context 'when items exists' do
+        before { @s = subject }
         it "is an instance of playlist" do
-          s = subject
-          expect(s.first).to be_an_instance_of(Kaltura::MediaEntry)
+          expect(@s.first).to be_an_instance_of(Kaltura::MediaEntry)
+        end
+
+        it "contains results" do
+          expect(@s.size).to eq 100
+        end
+
+        context 'when there is pagination' do
+          let(:options) { {pager: { :pageSize => 5}} }
+
+          it "contains limited results" do
+            expect(@s.size).to eq 5
+          end
         end
       end
 

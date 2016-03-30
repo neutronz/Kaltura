@@ -6,8 +6,12 @@ module Kaltura
       Kaltura::Playlist.new(fetch('playlist', 'get', {:id => id, :version => version}).first)
     end
 
-    def self.execute(id, version=nil)
-      result = fetch('playlist', 'execute', {:id => id, :version => version}).first
+    def self.execute(id, options={})
+      options ||= {}
+
+      result = fetch('playlist', 'execute', 
+                      {id: id}.merge(options)
+                    ).first
       result.fetch("item", []).map do |entry|
         Kaltura::MediaEntry.new(entry)
       end
