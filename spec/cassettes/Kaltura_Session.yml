@@ -1,55 +1,369 @@
---- 
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
-    uri: http://www.kaltura.com:80/api_v3/?action=start&ks=&partnerId=1&secret=superdupersecret&service=session&type=2
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=1851191&secret=d1be277fa0e84bde36b82deb1448a4cb&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      date: 
-      - Fri, 26 Aug 2011 21:38:40 GMT
-      server: 
+    headers:
+      Date:
+      - Wed, 20 Apr 2016 13:08:43 GMT
+      Server:
       - Apache
-      vary: 
+      X-Me:
+      - ny-front-api21
+      X-Kaltura:
+      - cached-dispatcher,61bc664e23131b8f1e038969c5841497,0.00022292137145996
+      Vary:
       - Accept-Encoding
-      x-me: 
-      - pa-apache3
-      x-ua-compatible: 
-      - IE=EmulateIE7
-      content-length: 
-      - "230"
-      content-type: 
+      Content-Length:
+      - '174'
+      Content-Type:
       - text/xml
-    body: <?xml version="1.0" encoding="utf-8"?><xml><result>thisisavalidsession</result><executionTime>0.048589944839478</executionTime></xml>
-    http_version: "1.1"
-- !ruby/struct:VCR::HTTPInteraction 
-  request: !ruby/struct:VCR::Request 
-    method: :get
-    uri: http://www.kaltura.com:80/api_v3/?action=start&ks=&partnerId=2&secret=superdupersecret&service=session&type=2
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response 
-    status: !ruby/struct:VCR::ResponseStatus 
+    body:
+      encoding: ASCII-8BIT
+      string: "<xml><result>djJ8MTg1MTE5MXxENunjpIXDHNWLFn59FlMjN14GEw-lTzCv-lzWXpho1ARNYLWDjaRhgtnrbtJosIvHgZNZE1OPlaOCfh9KJfW8</result><executionTime>0.00022292137145996</executionTime></xml>"
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 13:08:43 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=2&secret=d1be277fa0e84bde36b82deb1448a4cb&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 200
       message: OK
-    headers: 
-      date: 
-      - Fri, 26 Aug 2011 21:38:40 GMT
-      server: 
+    headers:
+      Date:
+      - Wed, 20 Apr 2016 13:08:43 GMT
+      Server:
       - Apache
-      vary: 
+      X-Me:
+      - ny-front-api27
+      X-Kaltura-Session:
+      - '1226380167'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-f0df0171d391e7225877de40c636e4c8
+      Vary:
       - Accept-Encoding
-      x-me: 
-      - pa-apache3
-      x-ua-compatible: 
-      - IE=EmulateIE7
-      content-length: 
-      - "227"
-      content-type: 
+      Content-Length:
+      - '259'
+      Content-Type:
       - text/xml
-    body: <?xml version="1.0" encoding="utf-8"?><xml><result><error><code>START_SESSION_ERROR</code><message>Error while starting session for partner [2]</message></error></result><executionTime>0.040677070617676</executionTime></xml>
-    http_version: "1.1"
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>SERVICE_FORBIDDEN_CONTENT_BLOCKED</code><message>The
+        access to this service is forbidden since the specified partner is blocked</message><args></args></error></result><executionTime>0.014394044876099</executionTime></xml>
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 13:08:43 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=PARTNER_ID&secret=&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 17:56:11 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api21
+      X-Kaltura-Session:
+      - '415448600'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '223'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>START_SESSION_ERROR</code><message>Error
+        while starting session for partner [0]</message><args></args></error></result><executionTime>0.022151947021484</executionTime></xml>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 17:56:11 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=startWidgetSession&ks=&service=session&widgetId=_1851201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 18:37:23 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api31
+      X-Kaltura:
+      - cached-dispatcher,cache_v3-e0c641a7af5eba87bd39f45aa5b7804b,0.0013160705566406
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '306'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaStartWidgetSessionResponse</objectType><partnerId>1851201</partnerId><ks>djJ8MTg1MTIwMXwc_eKWLHZMzcuv5awnbpzFjdVgBPTcBerLUGDpSKtcn8iq1XPmh7UA2c4ufxDvdd7pBvRwRim6WSihqQAc1LqX0VHGC3DiWqfqMYlcPVf7Ww==</ks><userId>0</userId><relatedObjects></relatedObjects></result><executionTime>0.017419099807739</executionTime></xml>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 18:37:23 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=startSession&id=1_hyqx5z91&ks=&service=appToken&tokenHash=600c0a48d0935ea9eba2be6e562bf491b8f4743a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 18:37:52 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api29
+      X-Kaltura-Session:
+      - '348645122'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - error-SERVICE_FORBIDDEN
+      X-Kaltura-App:
+      - exiting on error SERVICE_FORBIDDEN - The access to service [appToken->startSession]
+        is forbidden
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '276'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>SERVICE_FORBIDDEN</code><message>The
+        access to service [appToken-&gt;startSession] is forbidden</message><args><item><objectType>KalturaApiExceptionArg</objectType><name>SERVICE</name><value>appToken-&gt;startSession</value></item></args></error></result><executionTime>0.013941049575806</executionTime></xml>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 18:37:52 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=startSession&id=1_hyqx5z91&ks=djJ8MTg1MTIwMXwc_eKWLHZMzcuv5awnbpzFjdVgBPTcBerLUGDpSKtcn8iq1XPmh7UA2c4ufxDvdd7pBvRwRim6WSihqQAc1LqX0VHGC3DiWqfqMYlcPVf7Ww==&service=appToken&tokenHash=7b1215f85f48bcc2563ec8f62cfc2b65059fefc0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 19:14:57 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api27
+      X-Kaltura-Session:
+      - '1498496954'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '532'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaSessionInfo</objectType><ks>djJ8MTg1MTIwMXzqGAHHm87GTdVAscF7SLgtpt5YpluVEvi3Xe7pDrmUwWCvXPaAJo3GZ38wAvVgBKzsHq6qPczuNY2ejZ1Sm5Q4cqbaLRC9tHnppemwQS60BYkQb6XmGV8uO-l555oCm-I7QT405546TlxFZG4dUFhimDDh8_VBXyK22Xus0BMLYkTt-mXFyrTrOnNGdDOLd-yk51QVk_3f9kR1pZIxalaRnp_-BQCTLVn7l0WzxD3BT4XmKHlpfcAhqS8I5Dgcsjo=</ks><sessionType>0</sessionType><partnerId>1851201</partnerId><userId>CaaSTrial</userId><expiry>1461701697</expiry><privileges>sessionid:1_hyqx5z91,apptoken:1_hyqx5z91,list:*,privacycontext:MediaSpace,enableentitlement,setrole:13294781</privileges><relatedObjects></relatedObjects></result><executionTime>0.025338888168335</executionTime></xml>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 19:14:57 GMT
+- request:
+    method: get
+    uri: http://kaltura.com/api_v3/?action=start&ks=&partnerId=2&secret=&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 19:42:02 GMT
+      Server:
+      - Apache
+      X-Me:
+      - "(null)"
+      Location:
+      - http://www.kaltura.com/api_v3/?partnerId=2&secret=&type=0&action=start&service=session&ks=
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '275'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>302 Found</title>
+        </head><body>
+        <h1>Found</h1>
+        <p>The document has moved <a href="http://www.kaltura.com/api_v3/?partnerId=2&amp;secret=&amp;type=0&amp;action=start&amp;service=session&amp;ks=">here</a>.</p>
+        <hr>
+        <address>Apache Server at kaltura.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 19:42:02 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=start&ks=&partnerId=2&secret=&service=session&type=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Apr 2016 19:42:02 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api10
+      X-Kaltura-Session:
+      - '1242242093'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-50ba3bf588daabc691356b4625667b0c
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '259'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><error><objectType>KalturaAPIException</objectType><code>SERVICE_FORBIDDEN_CONTENT_BLOCKED</code><message>The
+        access to this service is forbidden since the specified partner is blocked</message><args></args></error></result><executionTime>0.035099983215332</executionTime></xml>
+    http_version: 
+  recorded_at: Mon, 25 Apr 2016 19:42:02 GMT
+recorded_with: VCR 2.9.3

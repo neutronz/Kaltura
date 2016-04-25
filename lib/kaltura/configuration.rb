@@ -9,7 +9,7 @@ module Kaltura
       :service_url => 'http://kaltura.com'
     }
 
-    attr_accessor :administrator_secret,  :user_secret, :partner_id, :service_url, :application_token
+    attr_accessor :administrator_secret,  :user_secret, :partner_id, :service_url, :application_token, :application_secret
 
     def initialize
       @@defaults.each_pair{|k,v| self.send("#{k}=",v)}
@@ -21,6 +21,13 @@ module Kaltura
   end
 
   def self.configure
+    clear_config
     yield config
+  end
+
+  def self.clear_config
+    %i[administrator_secret user_secret partner_id application_token application_secret].each do |k|
+      config.send("#{k}=", nil)
+    end
   end
 end

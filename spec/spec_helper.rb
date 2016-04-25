@@ -10,9 +10,9 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 VCR.configure do |c|
   c.cassette_library_dir     = 'spec/cassettes'
   c.hook_into :webmock
-  c.default_cassette_options = { :record => :once }
+  c.default_cassette_options = { :record => :new_episodes }
 end
 
 RSpec.configure do |config|
-  config.extend VCR::RSpec::Macros  
+  config.extend VCR::RSpec::Macros
 end

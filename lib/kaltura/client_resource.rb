@@ -28,7 +28,9 @@ module Kaltura
     private
 
     def _standard_options(service, action, options ={})
-      options.merge!(:ks => Kaltura::Session.kaltura_session, :action => action, :service => service)
+      standard_opts = {:action => action, :service => service }
+      standard_opts.merge!(:ks => Kaltura::Session.kaltura_session) unless options.has_key?(:ks)
+      options.merge!(standard_opts)
     end
 
     def _kickstart_session!
