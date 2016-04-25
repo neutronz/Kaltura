@@ -9,7 +9,7 @@ module Kaltura
       :service_url => 'http://kaltura.com'
     }
 
-    attr_accessor :administrator_secret, :partner_id, :service_url, :user_secret
+    attr_accessor :administrator_secret,  :user_secret, :partner_id, :service_url, :application_token
 
     def initialize
       @@defaults.each_pair{|k,v| self.send("#{k}=",v)}
