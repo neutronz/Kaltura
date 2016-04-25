@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Kaltura::Playlist  do
-  use_vcr_cassette(record: :new_episodes)
+  use_vcr_cassette
 
   let(:id) {'0_4ydctzyw'}
 
