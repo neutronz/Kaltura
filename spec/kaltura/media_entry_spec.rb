@@ -71,7 +71,8 @@ describe Kaltura::MediaEntry do
           @options = { :filter => { :orderBy => "%2BcreatedAt", :searchTextMatchOr => "Google" } }
         end
 
-        it { lambda { Kaltura::MediaEntry.list(@options) }.should_not raise_error }
+        it { lambda { Kaltura::MediaEntry.list(@options) }.not_to raise_error }
+        it { expect(Kaltura::MediaEntry.list(@options).first.total_count).to be }
       end
 
       context "when sorting" do

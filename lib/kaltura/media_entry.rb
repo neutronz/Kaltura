@@ -15,7 +15,12 @@ module Kaltura
     end
 
     def self.list(options={})
-      fetch('media', 'list', options).first.objects.item.map { |item| Kaltura::MediaEntry.new(item) }
+      _list = fetch('media', 'list', options).first
+
+      _list.objects.item.map do |item|
+        item.total_count = _list.totalCount.to_i
+        Kaltura::MediaEntry.new(item)
+      end
     end
 
     private
