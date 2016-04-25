@@ -26,9 +26,13 @@ describe Kaltura::MediaEntry do
     end
   end
 
-  context "retrieving multiple entries" do
-    describe "should be able to retrieve all videos." do
-      it { lambda { Kaltura::MediaEntry.list }.should_not raise_error }
+  describe "::list" do
+    before do
+      Kaltura.configure do |config|
+        config.application_token = "1_hyqx5z91"
+        config.application_secret = "7cbd774772933e4cd618e29794e71ca2"
+        config.service_url = 'http://www.kaltura.com'
+      end
     end
 
     describe "retrieving without paramters." do
@@ -36,10 +40,9 @@ describe Kaltura::MediaEntry do
         @entries_list = Kaltura::MediaEntry.list
       end
 
-      it { @entries_list.should be_an_instance_of Array }
-      it { @entries_list.first.should be_an_instance_of Kaltura::MediaEntry }
-      it { @entries_list.should have_at_least(1).things }
-      it { @entries_list.should have_at_most(30).things }
+      it { expect(@entries_list).to respond_to :each }
+      it { expect(@entries_list.first).to be_an_instance_of Kaltura::MediaEntry }
+      it { expect(@entries_list.size).to eq 30 }
     end
 
     context "retrieve another page." do
@@ -57,20 +60,21 @@ describe Kaltura::MediaEntry do
           @second_page = Kaltura::MediaEntry.list(:pager => {:pageIndex => 2})
         end
 
-        it { @fist_page.should_not eql(@second_page) } 
+        it { @fist_page.should_not eql(@second_page) }
       end
     end
 
-    context "filtering" do
-      describe "should be able to filter." do
+    #http://www.kaltura.com/api_v3/?service=media&action=list&filter:objectType=KalturaMediaEntryFilter&filter:orderBy=-startDate&filter:searchTextMatchOr=Google
+    describe "filtering and sorting" do
+      context "when able to filter." do
         before do
-          @options = { :filter => { :orderBy => "%2BcreatedAt" } }
+          @options = { :filter => { :orderBy => "%2BcreatedAt", :searchTextMatchOr => "Google" } }
         end
 
         it { lambda { Kaltura::MediaEntry.list(@options) }.should_not raise_error }
       end
 
-      describe "filtering should work." do
+      context "when sorting" do
         before do
           @first_page = Kaltura::MediaEntry.list(:filter => { :orderBy => "-createdAt" })
           @second_page = Kaltura::MediaEntry.list(:filter => { :orderBy => "%2BcreatedAt" })
@@ -80,23 +84,23 @@ describe Kaltura::MediaEntry do
       end
     end
 
-    context "updating an entry" do
-      before do
-        @entry = Kaltura::MediaEntry.get('0_2vk9wpn9')
-      end
+    #context "updating an entry" do
+      #before do
+        #@entry = Kaltura::MediaEntry.get('0_2vk9wpn9')
+      #end
 
-      describe "should not raise an error" do
-        it { lambda { @entry.update(:category => "") }.should_not raise_error }
-      end
-      describe "should be able to update existing entry." do
-        it "should update the tags wihtout an error" do
-          @entry.update(:tags => "harvard, youtube").should be_an_instance_of Kaltura::MediaEntry
-        end
-        it "should persist the change in the original media entry." do
-          @entry.update(:tags => "Youtube, harvard")
-          @entry.tags.should eq("Youtube, harvard")
-        end
-      end
-    end
+      #describe "should not raise an error" do
+        #it { lambda { @entry.update(:category => "") }.should_not raise_error }
+      #end
+      #describe "should be able to update existing entry." do
+        #it "should update the tags wihtout an error" do
+          #@entry.update(:tags => "harvard, youtube").should be_an_instance_of Kaltura::MediaEntry
+        #end
+        #it "should persist the change in the original media entry." do
+          #@entry.update(:tags => "Youtube, harvard")
+          #@entry.tags.should eq("Youtube, harvard")
+        #end
+      #end
+    #end
   end
 end
