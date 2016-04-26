@@ -10,6 +10,8 @@ require "kaltura/error"
 require "kaltura/session"
 require "kaltura/media_entry"
 require "kaltura/playlist"
+require "kaltura/category"
+require "kaltura/channel_thumbnail"
 
 module Kaltura
 end

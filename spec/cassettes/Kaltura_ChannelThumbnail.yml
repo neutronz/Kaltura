@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=startWidgetSession&ks=&service=session&widgetId=_1851201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Apr 2016 22:13:32 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api2
+      X-Kaltura:
+      - cached-dispatcher,cache_v3-e0c641a7af5eba87bd39f45aa5b7804b,0.0017480850219727
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '305'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaStartWidgetSessionResponse</objectType><partnerId>1851201</partnerId><ks>djJ8MTg1MTIwMXyfBnXwa13ivk1FcT1mZLnWKGUSmYna0-C23VO_WBtMUS2n0vu9hoZnLQm7ViOpabWDyeIOSSuz9nKDzmpAG_5rGyuyVlzsA5ahM0xzxa13Bg==</ks><userId>0</userId><relatedObjects></relatedObjects></result><executionTime>0.014837980270386</executionTime></xml>
+    http_version: 
+  recorded_at: Sat, 30 Apr 2016 22:13:32 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=startSession&id=1_hyqx5z91&ks=djJ8MTg1MTIwMXyfBnXwa13ivk1FcT1mZLnWKGUSmYna0-C23VO_WBtMUS2n0vu9hoZnLQm7ViOpabWDyeIOSSuz9nKDzmpAG_5rGyuyVlzsA5ahM0xzxa13Bg==&service=appToken&tokenHash=a8f81b9c28a940beff4497cf90187e306b7e0a80
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Apr 2016 22:13:32 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api32
+      X-Kaltura-Session:
+      - '56700554'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '528'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaSessionInfo</objectType><ks>djJ8MTg1MTIwMXwRPzUDxTuaP5F0tI5GsFbIn2JBSfOTPFqDvnWsr-SGnWGD8ATfZW5bBiumx-Arc4sK-haoXi3eKVpoQqefmMhU-qMPsN_dE5J2snu16pYMnwFqDoOYpGCpI3Ww5A-c538_6QX-zSTLgm19wkppIIWeF7CkEq1di-hEi7nOVpb8Mn7igwN1nzIf5N9BixTGvxbU4wtZ6B4N9b7K-1oJs9YB_2kyQgZFruXf1FhSha9s71CdEFIxbYElmqUJT7Ll0tA=</ks><sessionType>0</sessionType><partnerId>1851201</partnerId><userId>CaaSTrial</userId><expiry>1462144412</expiry><privileges>sessionid:1_hyqx5z91,apptoken:1_hyqx5z91,list:*,privacycontext:MediaSpace,enableentitlement,setrole:13294781</privileges><relatedObjects></relatedObjects></result><executionTime>0.02257513999939</executionTime></xml>
+    http_version: 
+  recorded_at: Sat, 30 Apr 2016 22:13:32 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=list&filter%5BmetadataObjectTypeEqual%5D=2&filter%5BmetadataProfileIdEqual%5D=4383381&filter%5BobjectIdIn%5D=30830272&ks=djJ8MTg1MTIwMXwRPzUDxTuaP5F0tI5GsFbIn2JBSfOTPFqDvnWsr-SGnWGD8ATfZW5bBiumx-Arc4sK-haoXi3eKVpoQqefmMhU-qMPsN_dE5J2snu16pYMnwFqDoOYpGCpI3Ww5A-c538_6QX-zSTLgm19wkppIIWeF7CkEq1di-hEi7nOVpb8Mn7igwN1nzIf5N9BixTGvxbU4wtZ6B4N9b7K-1oJs9YB_2kyQgZFruXf1FhSha9s71CdEFIxbYElmqUJT7Ll0tA=&service=metadata_metadata
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Apr 2016 22:13:32 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api27
+      X-Kaltura-Session:
+      - '509783929'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-2961e5ece50ad2cee5eb061a104f1512
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '179'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaMetadataListResponse</objectType><objects></objects><totalCount>0</totalCount><relatedObjects></relatedObjects></result><executionTime>0.075650930404663</executionTime></xml>
+    http_version: 
+  recorded_at: Sat, 30 Apr 2016 22:13:32 GMT
+recorded_with: VCR 2.9.3
