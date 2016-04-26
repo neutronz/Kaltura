@@ -10696,4 +10696,51 @@ http_interactions:
         suggest recovery neutral. category201607,category300100,category400073,category400417,categoryri6002,categoryri6004,categoryri0005,categoryri5141,geography100319,geography100114,geography100099,geographyri0938,geographyri1228,geography100105,geography100145,geography100317,company4295899948,company5000021791,company4298007872,company5000017806,company4296937871,person877741,tagrikw001847,tagrikw002242,tagrikw005449,tagrikw006404,tagrikw003600,tagrikw006058,tagrikw005366,tagrikw000392,tagrikw005023,tagrikw004974,tagrikw004467</searchText><licenseType>-1</licenseType><version>0</version><thumbnailUrl>http://cfvod.kaltura.com/p/1851201/sp/185120100/thumbnail/entry_id/1_zp0eewxf/version/100001/acv/201</thumbnailUrl><accessControlId>1795041</accessControlId><startDate>1310682420</startDate><endDate></endDate><referenceId>240795</referenceId><replacingEntryId></replacingEntryId><replacedEntryId></replacedEntryId><replacementStatus>0</replacementStatus><partnerSortValue>0</partnerSortValue><conversionProfileId>6249081</conversionProfileId><redirectEntryId></redirectEntryId><rootEntryId>1_zp0eewxf</rootEntryId><parentEntryId></parentEntryId><operationAttributes></operationAttributes><entitledUsersEdit></entitledUsersEdit><entitledUsersPublish></entitledUsersPublish><capabilities></capabilities><templateEntryId></templateEntryId><relatedObjects></relatedObjects></item></objects><totalCount>533</totalCount><relatedObjects></relatedObjects></result><executionTime>0.57854890823364</executionTime></xml>"
     http_version: 
   recorded_at: Mon, 25 Apr 2016 20:28:21 GMT
+- request:
+    method: get
+    uri: http://www.kaltura.com/api_v3/?action=list&filter%5BorderBy%5D=%2BcreatedAt&filter%5BsearchTextMatchOr%5D=Foo%20Barzzzzzzzzzzzz&ks=djJ8MTg1MTIwMXz2Km6uMYxMO1DdaKcPIXOc2RdlRs5NF8BrANPclitnH88p-Fk678Dl_U21xAANZZ181NiJj_IGcoB18F3weiZkVelq65W2lPbJnv3CWNjERHe2IQDDOL5u2qGbDwnCqEh7SQ3aV36Ga3oDVcj6YBPcFniXSSQl2bQse6XWbp5LkteqxVJaxrHQ9mNnNALLSvGeFWFAan1j-hrcBvCvFg-4jvpOnogQKqx_lY5FbTvAt-SvC-cJS6S0lSzoFbzDLvI=&service=media
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Apr 2016 15:21:05 GMT
+      Server:
+      - Apache
+      X-Me:
+      - ny-front-api28
+      X-Kaltura-Session:
+      - '201932615'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 19 Nov 2000 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Kaltura:
+      - cache-key,cache_v3-3d33ac4d58198bdad1df38c4bd51596a
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '178'
+      Content-Type:
+      - text/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><xml><result><objectType>KalturaMediaListResponse</objectType><objects></objects><totalCount>0</totalCount><relatedObjects></relatedObjects></result><executionTime>0.065027952194214</executionTime></xml>
+    http_version: 
+  recorded_at: Tue, 26 Apr 2016 15:21:05 GMT
 recorded_with: VCR 2.9.3

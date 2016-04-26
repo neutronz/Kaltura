@@ -16,6 +16,7 @@ module Kaltura
 
     def self.list(options={})
       _list = fetch('media', 'list', options).first
+      return [] unless _list.totalCount.to_i > 0
 
       _list.objects.item.map do |item|
         item.total_count = _list.totalCount.to_i

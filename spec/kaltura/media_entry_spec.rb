@@ -75,6 +75,15 @@ describe Kaltura::MediaEntry do
         it { expect(Kaltura::MediaEntry.list(@options).first.total_count).to be }
       end
 
+      context "when filtering with no results" do
+        before do
+          @options = { :filter => { :orderBy => "%2BcreatedAt", :searchTextMatchOr => "Foo Barzzzzzzzzzzzz" } }
+        end
+
+        it { expect{Kaltura::MediaEntry.list(@options)}.not_to raise_error }
+        it { expect(Kaltura::MediaEntry.list(@options).count).to eq 0 }
+      end
+
       context "when sorting" do
         before do
           @first_page = Kaltura::MediaEntry.list(:filter => { :orderBy => "-createdAt" })
