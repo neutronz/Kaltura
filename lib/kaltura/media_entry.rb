@@ -18,7 +18,10 @@ module Kaltura
       _list = fetch('media', 'list', options).first
       return [] unless _list.totalCount.to_i > 0
 
-      _list.objects.item.map do |item|
+      #NOTE: A single return value isn't an array, it's a hash so force it to be treated as an array of 1.
+      items = _list.objects.item.respond_to?(:keys) ? [_list.objects.item] : _list.objects.item
+
+      items.map do |item|
         item.total_count = _list.totalCount.to_i
         Kaltura::MediaEntry.new(item)
       end
